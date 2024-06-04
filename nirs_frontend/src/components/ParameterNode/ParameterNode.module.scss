@@ -1,0 +1,26 @@
+$background-color: linear-gradient(180deg, #ffffff 0%, #a3a3a3 100%);
+$border-color: #000000;
+$border-radius: 5px;
+
+.node {
+  min-width: 100px;
+  padding: 10px;
+
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  background-color: $background-color;
+
+  &_selected {
+    border: 1px solid blueviolet;
+  }
+
+  &__label {
+    font-weight: bold;
+  }
+}
+
+:global {
+  .react-flow__node-toolbar button:focus {
+    outline: none;
+  }
+}
